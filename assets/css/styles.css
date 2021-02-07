@@ -1,0 +1,94 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0px !important;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: rgb(2, 2, 71);
+  border-bottom: solid rgb(58, 58, 243) 10px;
+}
+
+.img-header {
+  width: 300px;
+}
+
+.content {
+  display: flex;
+  height: calc(100% - 139px) !important;
+}
+
+.catalog {
+  flex: 25%;
+  background: rgb(2, 2, 71);
+  border-right: solid rgb(58, 58, 243) 10px;
+}
+
+.catalog h1 {
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  border-bottom: solid rgb(58, 58, 243) 10px;
+  padding: 3px;
+}
+
+.catalog ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.catalog ul li {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  margin: 0px 10px 0px 10px;
+}
+
+.catalog ul li.selected {
+  background: green;
+}
+
+.catalog ul li.selected:hover {
+  background: rgb(2, 56, 2);
+}
+
+.playroom {
+  position: relative;
+  background: black;
+  flex: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+.play-button {
+  opacity: 0;
+  position: absolute;
+  top: 209px;
+  background: #e2e9e8;
+  padding: 8px 44px;
+  border-radius: 5px;
+  font-size: 54px;
+  box-shadow: 7px 6px 5px 0px rgb(0 0 0 / 75%);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.play-button:hover {
+  background: #999b9b;
+}
+
+.play-button.show {
+  opacity: 1;
+}
+
+canvas {
+  border: solid black 1px;
+  background: rgb(125, 212, 125);
+}
